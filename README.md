@@ -34,9 +34,6 @@ uv run -m faker_ecommerce --parquet-dir ./data --quick
 ### Generate to PostgreSQL
 
 ```bash
-# First, set up the database (optional helper script)
-./setup_db.sh myuser mypassword ecommerce_db
-
 # Generate data
 uv run -m faker_ecommerce --username myuser --database ecommerce_db --quick
 ```
